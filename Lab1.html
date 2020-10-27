@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Lab1 Web-Programing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<table id="enterPlace">
+    <tr>
+        <header id="headOfProject">
+        <h1>Лабораторная работа №1 по Веб-программированию</h1>
+            <br>
+            <h2 id="head">Проверка попадания точки в заданную область.</h2>
+            <h2 id="name">Машковцев Александр Р3213<br>
+                Вариант: 2414
+            </h2>
+        </header>
+    </tr>
+</table>
+<table id="table1">
+    <tr>
+        <td align="center" id="image">
+            <img class="area" title="Areas" src="pic.png"/>
+            <p class="content">Изображение допустимой области</p>
+        </td>
+        <td align="center">
+            <form id="form"  name="form" class="form" method="post" action="post1.php">
+                <h2 id="enterx">
+                    Выберите X:
+                </h2>
+                <div class = "checkbox">
+                    <input id="checkbox1" name="checkboxx" type="checkbox" value="-3"/><label for="checkbox1">-3</label>
+                    <input id="checkbox2" name="checkboxx" type="checkbox" value="-2"/><label for="checkbox2">-2</label>
+                    <input id="checkbox3" name="checkboxx" type="checkbox" value="-1"/><label for="checkbox3">-1</label>
+                    <input id="checkbox4" name="checkboxx" type="checkbox" value="0"/><label for="checkbox4">0</label>
+                    <input id="checkbox5" name="checkboxx" type="checkbox" value="1"/><label for="checkbox5">1</label>
+                    <input id="checkbox6" name="checkboxx" type="checkbox" value="2"/><label for="checkbox6">2</label>
+                    <input id="checkbox7" name="checkboxx" type="checkbox" value="3"/><label for="checkbox7">3</label>
+                    <input id="checkbox8" name="checkboxx" type="checkbox" value="4"/><label for="checkbox8">4</label>
+                    <input id="checkbox9" name="checkboxx" type="checkbox" value="5"/><label for="checkbox9">5</label>
+                </div>
+                <p id="messagex" ><br></p>
+    
+                <p>
+                 <h2 id="entery">
+                     Введите Y в диапозоне (-5;5)
+                 </h2>
+                </p>
+                <input name="texty" id="texty" type="text" maxlength="8" />
+                <p id="messagey"><br></p>
+    
+                 <h2 id="enterr">
+                     Выберите R:
+                 </h2>
+                 <div class="button">
+                    <label for="r1"></label><input id="r1" name="rbutton" type="button" value="1" />
+                    <label for="r2"></label><input id="r2" name="rbutton" type="button" value="1.5" />
+                    <label for="r3"></label><input id="r3" name="rbutton" type="button" value="2" />
+                    <label for="r4"></label><input id="r4" name="rbutton" type="button" value="2.5" />
+                    <label for="r5"></label><input id="r5" name="rbutton" type="button" value="3" />
+                </div>
+                <p id="messager"><br></p>
+                <p id="control_buttons">
+                <button id="suputton" class = "send_button" name="send" type="submit">Отправить...</button>
+                <button id="suputton1" class = "clear_button" name="clear" type="reset">Очистить</button>
+                </p>
+            </form>
+        </td>
+    </tr>
+</table>
+<div class="tbl">
+<table id="table2">
+    <tr id = 'header'>
+        <td>Координата Х</td>
+        <td>Координата Y</td>
+        <td>Радиус R</td>
+        <td>Попадание</td>
+        <td>Текущее время</td>
+        <td>Время исполнения</td>
+    </tr>
+</table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
